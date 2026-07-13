@@ -708,11 +708,6 @@
                 </div>
             </div>
 
-            <!-- КНОПКИ -->
-            <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin:6px 0 10px;">
-                <button class="btn-soft" id="rsvpBtn"><i class="fas fa-bell"></i> Я ПРИДУ</button>
-                <button class="btn-soft" id="routeBtn"><i class="fas fa-map-pin"></i> МАРШРУТ</button>
-            </div>
 
             <!-- НОВЫЙ БЛОК: ПОДТВЕРЖДЕНИЕ И КНОПКА С ФОРМОЙ -->
             <div class="confirm-block">
@@ -811,7 +806,7 @@
             <div class="address-block">
                 <div><i class="fas fa-hotel"></i> Парк-отель Нерядово</div>
                 <div style="font-size:14px; color:#555;">Луговая ул., 83, д. Нерядово</div>
-                <a href="#" class="map-link" id="routeMapLink"><i class="fas fa-map-signs"></i> ОТКРЫТЬ МАРШРУТ</a>
+                <a href="https://yandex.ru/maps/11156/chuvash-republic/house/lugovaya_ulitsa_83/YE4YcQ5gSUUCQFtsfX1zcH1nYQ==/?ll=47.790005%2C56.121145&source=serp_navig&z=17" class="map-link" id="routeMapLink"><i class="fas fa-map-signs"></i> ОТКРЫТЬ МАРШРУТ</a>
             </div>
             <div style="margin-top:10px; font-size:16px; color:#1a1a1a;">
                 «Просим учесть, что программа вечера рассчитана на взрослую аудиторию. Будем благодарны, если вы придёте
@@ -877,9 +872,6 @@
             updateTimer();
             setInterval(updateTimer, 1000);
 
-            document.getElementById('rsvpBtn').addEventListener('click', () => alert('Спасибо! Ждём вас! 💍'));
-            document.getElementById('routeBtn').addEventListener('click', () => window.open('https://yandex.ru/maps/?text=Луговая+ул.,+83,+д.+Нерядово', '_blank'));
-            document.getElementById('routeMapLink').addEventListener('click', (e) => { e.preventDefault(); window.open('https://yandex.ru/maps/?text=Луговая+ул.,+83,+д.+Нерядово', '_blank'); });
 
             // МУЗЫКА
             const audio = document.getElementById('bg-music');
